@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Shazam Essay</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/p5.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/vanta.trunk.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Taylor Millin Reade</span></a></h1>
+          <h2>Portfolio of work</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visualiser.html">Audio Visualiser</a></li>
+          <li><a href="sudoku.html">Sudoku</a></li>
+          <li class="selected"><a href="shazam.html">Shazam Essay</a></li>
+          <li><a href="cv.html">Curriculum Vitae</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content">
+        <h1>Essay on Shazam</h1>
+        <p>Shazam is an application designed to identify a piece of music and provide the userwith information that it compiles from other sources. To use the application the user is prompted to press a button. This utilises the microphone of the device it is installed on to record for 10 seconds. It then attempts to match this recording with a piece of music that is stored on their database. If a match is found then information on the piece of music is sent back to the user. This entire process is achieved in a matter of seconds.</p>
+        <p>In order to do this,  firstly the users device needs to convert the analogue sound vibrations into an electronic signal. This is called digitization: an analogue sound is a continuous signal this means that it can be divided infinitely, when digitising you can’t afford to store an infinite amount of information so you need to set a minimum unit of time this is to keep the size of the file small. Within this minimum unit the sound can’t change so it needs to be small enough that the difference is imperceptible this is called sampling.</p>
+        <p>Shazam then implements a technique it calls an audio fingerprint. This is an algorithm that uses spectral filtering to convert a piece of music in to a code. This code will be the same even if it was created from different types of sound files whether that be ACC, WMA or MP3.</p>
+        <p>Shazam has compiled a massive database of music files which it has then used the audio fingerprint algorithm to compile into a database of audio fingerprints. When the app is on the users device creates an audio fingerprint, which is sent to the shazam servers where it is compared with their database. If a match is found all relevant information is then sent back to the user.</p>
+        <p>Shazam uses the internet to send and receive information between their servers and the users devise. This means that they have to use different forms of communications protocols to send and receive information. Protocols are sets of rules that allow two or more entities of a communications system to transmit information. Having a standardised set of protocols such as the TCP/IP suite allows for vendors to be able to sell products that they know will be able to communicate with products from other vendors. TCP/IP (Transmission Control Protocol / Internet Protocol) reference model consists of four layers: the application layer that prepares the data to be sent over the internet providing the address of its destination. The transition layer that splits messages into small segments called packets that are sequenced to be reassembled when received at their destination. The network layer that receives these messages and determines the route they will travel to their destination, and the link layer that transfers the packets over the infrastructure of the internet. As shazam is designed to be used on mobile devices it also has to use mobile and Wi-Fi protocols such as GSM (Global system for mobile) or 802.11 a b g n AC.</p>
+        <p>Once the audio fingerprint is received at the shazam servers it is checked against their extensive data base. This process is easily scalable as the entire audio fingerprint library can be split into D databases each of them containing 1/D of the full audio fingerprint collection. You can then search for matches in all of these database simultaneously. Making a search D times faster.</p>
+        <p>If any matches are found within shazam’s database the closest will be selected. further information is then compiled about the piece of music such as artist, album, and other related music. The server will then send this back to the users device. Information is also provided from other platforms such as youtube, spotify and apple music.</p>
+        <p>When building this application, a decision would have had to be made about how complex to make the audio fingerprint. Having a more simplified audio fingerprint would cut down on both creating the audio fingerprint and searching within the database as there would be less parameters to match. Whereas having a very complex audio fingerprint would take longer to search but produce far less false positives. I believe a lot of time has been spent testing to find the perfect balance. Shazam has created a very efficient piece of software that can find matches quickly within extremely large amounts of data. It has also done this in a way that is very intuitive for the user. With just the push of a button a large amount of information is provided automatically. The application is also versatile as it can filter out a lot of ambient noise making it usable in real situations.</p>
+        <a href="assets/shazam.docx" download>
+        <button class="dLoad center">Download</button>
+        </a>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="visualiser.html">Audio Visualiser</a> | <a href="sudoEnc">Sudoku</a> | <a href="shazam.html">Shazam Essay</a> | <a href="cv.html">Curriculum vitae</a> | <a href="contact.html">Contact Me</a></p>
+    </div>
+  </div>
+  <script>
+  VANTA.TRUNK({
+    el: "body",
+    color: 0xa2234a,
+    backgroundColor: 0x161718
+  })
+  </script>
+</body>
+</html>

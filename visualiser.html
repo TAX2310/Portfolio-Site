@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Audio Visualiser</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/p5.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/vanta.trunk.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Taylor Millin Reade</span></a></h1>
+          <h2>Portfolio of work</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="visualiser.html">Audio Visualiser</a></li>
+          <li><a href="sudoku.html">Sudoku</a></li>
+          <li><a href="shazam.html">Shazam Essay</a></li>
+          <li><a href="cv.html">Curriculum Vitae</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content"> 
+        <h2>Audio visualiser</h2>
+        <p>I created this Audio Visualiser as a piece of coursework for my first year module introduction to programing. it uses a range of techniques to create four animations that are manipulated by a piece of audio.</p>
+        <h3>Spin</h3>
+        <p>Spin takes a piece of audio and analises a range within the audible sound spectrum and separates this range into 1024 bins. the volume of each of these bins and moves the shape on screen accordingly. The animation is then rotated around the center of the screen.</p>
+        <video controls>
+          <source src="assets/spin.mp4" type="video/mp4">
+        </video>
+        <br>
+        <h3>Wave Pattern</h3>
+        <p>Wave Pattern analysis a piece of audio using the waveform to manipulate three lines and three concentric circles.</p>
+        <video controls>
+          <source src="assets/wavePattern.mp4" type="video/mp4">
+        </video>
+        <h3>Spectrum</h3>
+        <p>Spectrum takes both the spectrum and waveform analysis creating three different animations. These animations appear at the point of a mouse click and move in a random direction and speed.</p>
+        <video controls>
+          <source src="assets/spectrum.mp4" type="video/mp4">
+        </video>
+        <h3>Video</h3>
+        <p>Video uses the webcam functionality and manipulate the colour of the image using the spectrum analysis.</p>
+        <video controls>
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <a href="assets/audiovis/index.html" target="_blank">
+        <button class="runAV center">Audio Visualiser</button>
+        </a>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="visualiser.html">Audio Visualiser</a> | <a href="sudoEnc">Sudoku</a> | <a href="shazam.html">Shazam Essay</a> | <a href="cv.html">Curriculum vitae</a> | <a href="contact.html">Contact Me</a></p>
+    </div>
+  </div>
+  <script>
+  VANTA.TRUNK({
+    el: "body",
+    color: 0xa2234a,
+    backgroundColor: 0x161718
+  })
+  </script>
+</body>
+</html>

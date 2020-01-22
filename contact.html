@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Contact</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/p5.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/vanta.trunk.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Taylor Millin Reade</span></a></h1>
+          <h2>Portfolio of work</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visualiser.html">Audio Visualiser</a></li>
+          <li><a href="sudoku.html">Sudoku</a></li>
+          <li><a href="shazam.html">Shazam Essay</a></li>
+          <li><a href="cv.html">Curriculum Vitae</a></li>
+          <li class="selected"><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content">
+        <img class="right" src="assets/bean.jpg" alt="an image of my dog Bean. a vizsla hunting dog">
+        <h1>Contact Me</h1>
+        <p>If you wold like to contact me please fill out the form below:</p>
+          <div class="form_settings">
+            <form action="mailto:tmill004@gold.ac.uk">
+              <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
+              <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
+              <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Submit" /></p>
+            </form>
+          </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="visualiser.html">Audio Visualiser</a> | <a href="sudoEnc">Sudoku</a> | <a href="shazam.html">Shazam Essay</a> | <a href="cv.html">Curriculum vitae</a> | <a href="contact.html">Contact Me</a></p>
+    </div>
+  </div>
+  <script>
+  VANTA.TRUNK({
+    el: "body",
+    color: 0xa2234a,
+    backgroundColor: 0x161718
+  })
+  </script>
+</body>
+</html>
